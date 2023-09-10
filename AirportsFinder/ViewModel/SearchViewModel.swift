@@ -14,9 +14,8 @@ protocol SearchViewPresentable {
     typealias Input = (
         searchText: Driver<String>, ()
     )
-    typealias Output = (
-    
-    )
+    typealias Output = ()
+    typealias ViewModelBuilder = (SearchViewPresentable.Input) -> SearchViewPresentable
     
     var input: SearchViewPresentable.Input { get }
     var output: SearchViewPresentable.Output { get }

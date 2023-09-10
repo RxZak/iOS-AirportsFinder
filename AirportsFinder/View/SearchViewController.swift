@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxDataSources
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, Storyboarded {
 
     // MARK: - IBOutlets
     
@@ -19,13 +19,16 @@ class SearchViewController: UIViewController {
     
     // MARK: Properties
     
-    var viewModel: SearchViewPresentable!
+    private var viewModel: SearchViewPresentable!
+    var viewModelBuilder: SearchViewPresentable.ViewModelBuilder!
     
     // MARK: - View Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        viewModel = viewModelBuilder((
+            searchText: searchTextField.rx.text.orEmpty.asDriver(), ()
+        ))
     }
 
 

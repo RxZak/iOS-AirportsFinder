@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2657F3C42AAB392C00F4E8BF /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657F3C32AAB392C00F4E8BF /* SearchViewModel.swift */; };
+		2657F3D22AADC1BD00F4E8BF /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657F3D12AADC1BD00F4E8BF /* SearchCoordinator.swift */; };
+		2657F3D42AADC1ED00F4E8BF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657F3D32AADC1ED00F4E8BF /* Coordinator.swift */; };
+		2657F3D62AADC74400F4E8BF /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657F3D52AADC74400F4E8BF /* BaseCoordinator.swift */; };
+		2657F3D92AADC81F00F4E8BF /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657F3D82AADC81F00F4E8BF /* Storyboarded.swift */; };
+		2657F3DB2AADD00F00F4E8BF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657F3DA2AADD00F00F4E8BF /* AppCoordinator.swift */; };
 		267A656E2AAB272A00DDAF68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267A656D2AAB272A00DDAF68 /* AppDelegate.swift */; };
 		267A65702AAB272A00DDAF68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267A656F2AAB272A00DDAF68 /* SceneDelegate.swift */; };
 		267A65722AAB272A00DDAF68 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267A65712AAB272A00DDAF68 /* SearchViewController.swift */; };
@@ -19,6 +24,11 @@
 
 /* Begin PBXFileReference section */
 		2657F3C32AAB392C00F4E8BF /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		2657F3D12AADC1BD00F4E8BF /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		2657F3D32AADC1ED00F4E8BF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2657F3D52AADC74400F4E8BF /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		2657F3D82AADC81F00F4E8BF /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		2657F3DA2AADD00F00F4E8BF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		267A656A2AAB272A00DDAF68 /* AirportsFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirportsFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		267A656D2AAB272A00DDAF68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		267A656F2AAB272A00DDAF68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +79,25 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		2657F3C52AAB5B7700F4E8BF /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				2657F3D12AADC1BD00F4E8BF /* SearchCoordinator.swift */,
+				2657F3D32AADC1ED00F4E8BF /* Coordinator.swift */,
+				2657F3D52AADC74400F4E8BF /* BaseCoordinator.swift */,
+				2657F3DA2AADD00F00F4E8BF /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		2657F3D72AADC80E00F4E8BF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2657F3D82AADC81F00F4E8BF /* Storyboarded.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		267A65612AAB272A00DDAF68 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +119,8 @@
 		267A656C2AAB272A00DDAF68 /* AirportsFinder */ = {
 			isa = PBXGroup;
 			children = (
+				2657F3D72AADC80E00F4E8BF /* Shared */,
+				2657F3C52AAB5B7700F4E8BF /* Coordinators */,
 				2657F3C22AAB38CE00F4E8BF /* ViewModel */,
 				2657F3C12AAB38BC00F4E8BF /* View */,
 				267A656D2AAB272A00DDAF68 /* AppDelegate.swift */,
@@ -226,7 +257,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				267A65722AAB272A00DDAF68 /* SearchViewController.swift in Sources */,
+				2657F3D22AADC1BD00F4E8BF /* SearchCoordinator.swift in Sources */,
+				2657F3D42AADC1ED00F4E8BF /* Coordinator.swift in Sources */,
 				267A656E2AAB272A00DDAF68 /* AppDelegate.swift in Sources */,
+				2657F3D92AADC81F00F4E8BF /* Storyboarded.swift in Sources */,
+				2657F3D62AADC74400F4E8BF /* BaseCoordinator.swift in Sources */,
+				2657F3DB2AADD00F00F4E8BF /* AppCoordinator.swift in Sources */,
 				2657F3C42AAB392C00F4E8BF /* SearchViewModel.swift in Sources */,
 				267A65702AAB272A00DDAF68 /* SceneDelegate.swift in Sources */,
 			);
