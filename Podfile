@@ -9,4 +9,5 @@ target 'AirportsFinder' do
     pod 'RxSwift', '6.5.0'
     pod 'RxCocoa', '6.5.0'
     pod 'RxDataSources', '~> 5.0'
+    pod 'Alamofire', '~> 5.0'
 end
